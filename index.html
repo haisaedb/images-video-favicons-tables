@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Images, Video, Favicons, &amp; Tables</title>
         <!-- TO DO:add your name to the meta author tag -->
-        <meta name="author" content="">
+        <meta name="author" content="DeAsiah Blackman">
         <meta name="description" content="Practice with images, video, svgs, favicons, and tables for G.I.T. 215">
 
         <!-- A FAVICON -->
@@ -60,40 +60,59 @@
             </nav>
         </header>
         <main>
-            <p>Follow along as we learn about using images in HTML, adding a favicon to a website, adding SVGs to HTML, adding a video to a web page, and creating a table with HTML.</p>
+            <p>Follow along as we learn about using images in HTML, adding a favicon to a website, adding SVGs to HTML, adding a video to a web page, 
+            and creating a table with HTML.</p>
 
             <section id="images">
                 <h2>Adding Images to Your HTML</h2>
-                <p>There are a couple of reasons for adding images to your HTML. One reason is that you would like to add an image for decoration. This means that if you took it off the page, the user would still be able to use and understand the page fully, because the image isn't adding any information they won't have otherwise. The other reason is because you have images that are necessary content, and if you remove them from the page the user would be lost or missing needed information.</p>
+                <p>There are a couple of reasons for adding images to your HTML. One reason is that you would like to add an image for decoration. 
+                This means that if you took it off the page, the user would still be able to use and understand the page fully, because the image 
+                isn't adding any information they won't have otherwise. The other reason is because you have images that are necessary content, 
+                and if you remove them from the page the user would be lost or missing needed information.</p>
 
-                <p>Images have two required attributes: <code>src</code>, which tells the browser where the image is and should use a relative link, and <code>alt</code>, which uses text to describe the image so that you could imagine what it looks like if you can't see it. Remember that if your image has any text in it, you have to include that in the alt text. It is also important to add the <code>height</code> and <code>width</code> attributes, as it improves the way your page looks as it loads. Ensure that those attributes are taken from the image, after editing and saving it at the correct size. Not respecting the aspect ratio will make your images look distorted on the screen.</p>
+                <p>Images have two required attributes: <code>src</code>, which tells the browser where the image is and should use a relative link, 
+                and <code>alt</code>, which uses text to describe the image so that you could imagine what it looks like if you can't see it. 
+                Remember that if your image has any text in it, you have to include that in the alt text. It is also important to add the <code>height</code> 
+                and <code>width</code> attributes, as it improves the way your page looks as it loads. Ensure that those attributes are taken from the image, 
+                after editing and saving it at the correct size. Not respecting the aspect ratio will make your images look distorted on the screen.</p>
 
                 <section>
                     <h3><span>&#10033;&nbsp;</span> Adding Decorative Images to HTML</h3>
-                    <p>As explained above, a decorative images is one that if you took it off the page, the user would still be able to use and understand the page fully, because the image isn't adding any information they won't have otherwise. When adding these in your HTML, you indicate that they are decorative by leaving the alt text attribute empty. You can't leave the alt attribute off completely, just blank. Generally though, you'll add decorative images using CSS.</p>
+                    <p>As explained above, a decorative images is one that if you took it off the page, the user would still be 
+                    able to use and understand the page fully, because the image isn't adding any information they won't have otherwise. 
+                    When adding these in your HTML, you indicate that they are decorative by leaving the alt text attribute empty. 
+                    You can't leave the alt attribute off completely, just blank. Generally though, you'll add decorative images using CSS.</p>
 
                     <!-- TO DO: add the image named square-red-blue to this section below. Be sure to add its height and width -->
-
-                    <p class="credit">Photo by <a href="https://unsplash.com/@usgs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">USGS</a> on <a href="https://unsplash.com/wallpapers/cool/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                    <img src="images/square-red-blue.jpg" alt="" width="400" height="400">
+                    <p class="credit">Photo by <a href="https://unsplash.com/@usgs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">USGS</a> 
+                    on <a href="https://unsplash.com/wallpapers/cool/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
 
                 <section>
                     <h3><span>&#10033;&nbsp;</span> Adding Images as Content is HTML</h3>
-                    <p>For images that are content, and necessary for understanding the page (think products, maps, etc.) you cannot leave the alt text blank, and should use it to describe the image to the best of your ability. These should also use width and height attributes that come from the edited image itself.</p>
+                    <p>For images that are content, and necessary for understanding the page (think products, maps, etc.) you cannot leave the 
+                    alt text blank, and should use it to describe the image to the best of your ability. These should also use width and height 
+                    attributes that come from the edited image itself.</p>
 
                     <!-- TO DO: add the memphis recording service to this section below, I used "a neon sign hanging on a dark wall that says memphis recording service" as the alt text for this image it is 400px wide by 400px tall -->
-
-                    <p class="credit">Photo by <a href="https://unsplash.com/es/@uconrad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwe Conrad</a> on <a href="https://unsplash.com/photos/zPnHgxeu9LI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                    <img src="images/memphis-recording-service.jpg" alt="neon sign in white and red that says Memphis recording-service" width="400" height="400">
+                    <p class="credit">Photo by <a href="https://unsplash.com/es/@uconrad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwe Conrad</a> 
+                    on <a href="https://unsplash.com/photos/zPnHgxeu9LI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
             </section>
 
             <section id="video">
                 <h2>Adding Video to Your HTML</h2>
-                <p>Many sites today use video, as it is something that audiences prefer. You can use multiple sources to allow the browser to play the one that it supports. This is especially handy if you are using a newer format, because you can also include older formats in case the user isn't in an updated browser. As with other resources on your site, you should use relative links for the <code>src</code> attribute.</p>
+                <p>Many sites today use video, as it is something that audiences prefer. You can use multiple sources to allow the browser to play 
+                the one that it supports. This is especially handy if you are using a newer format, because you can also include older formats in 
+                case the user isn't in an updated browser. As with other resources on your site, you should use relative links for the <code>src</code> attribute.</p>
 
                 <section>
                     <h3><span>&#10033;&nbsp;</span> Using HTML5 to Add a Video</h3>
-                    <p>The video that we will embed below is included in the video folder of this project. Your zyBook explains how these tags work in detail, but today we'll write some minimum code to get the video to display on our page. Below, we'll add the video from the video folder in the project. Include the attribute that will display controls for the video, and set the width.</p>
+                    <p>The video that we will embed below is included in the video folder of this project. Your zyBook explains how these tags work 
+                    in detail, but today we'll write some minimum code to get the video to display on our page. Below, we'll add the video from the 
+                    video folder in the project. Include the attribute that will display controls for the video, and set the width.</p>
                     
                     <!-- TO DO: Add the video from the files below using HTML5 -->
 
@@ -102,7 +121,9 @@
 
                 <section>
                     <h3><span>&#10033;&nbsp;</span> Adding Video From YouTube</h3>
-                    <p>Adding a video from YouTube is as simple as copying and pasting some code. YouTube videos include embed code under the share menu for each video. Once it is open, you can choose to set some options or just copy the code and paste it into your HTML. YouTube uses a tag called an <code>iframe</code> to hold their videos. These can render more than just videos, though, including an entire web page.</p>
+                    <p>Adding a video from YouTube is as simple as copying and pasting some code. YouTube videos include embed code under the share menu for each video. 
+                    Once it is open, you can choose to set some options or just copy the code and paste it into your HTML. YouTube uses a tag called an <code>iframe</code> 
+                    to hold their videos. These can render more than just videos, though, including an entire web page.</p>
                     <!-- This video can be found here: https://www.youtube.com/watch?v=k9DZp16uNQk&list=RDk9DZp16uNQk&start_radio=1 I did remove the autoplay and frameborder attributes from the given code -->
                     <iframe width="425" height="240" src="https://www.youtube.com/embed/k9DZp16uNQk" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </section>
@@ -110,19 +131,26 @@
 
             <section id="favicon">
                 <h2>Adding a Favicon to Your Web Page</h2>
-                <p>A favicon serves a lot of purposes, as you saw in our lecture today. You can find the original png that we will use to create our favicon inside of the images folder. You can easily convert it to a favicon file type on the <a href="https://www.favicon-generator.org/" target="_blank">Favicon Generator website</a>. Be sure to select to only generate the 16x16 favicon with the options below the file upload.</p>
+                <p>A favicon serves a lot of purposes, as you saw in our lecture today. You can find the original png that we will use to create our favicon inside 
+                of the images folder. You can easily convert it to a favicon file type on the <a href="https://www.favicon-generator.org/" target="_blank">Favicon 
+                Generator website</a>. Be sure to select to only generate the 16x16 favicon with the options below the file upload.</p>
                 <p>Please follow the instructions in class to get this working.</p>
             </section>
 
             <section id="svg">
                 <h2>Using SVGs in HTML</h2>
-                <p>There are a few ways that you can add an SVG to your page with HTML, and today we'll practice pasting their code directly into our HTML. You can also use a link to the file as the <code>src</code> for an image tag, but pasting the code allows us to do more with CSS later. Vector images are best for graphics, because they are defined with math, and will display perfectly at any size, which saves time when they load on the page.</p>
-                <p>We are going to paste an SVG icon for Facebook into the footer below to practice this. Notice that I have added an <code>aria-label</code> attribute to the links wrapped around those icons. It is used when there isn't any link text, like when you wrap a link around the image.</p>
+                <p>There are a few ways that you can add an SVG to your page with HTML, and today we'll practice pasting their code directly into our HTML. 
+                You can also use a link to the file as the <code>src</code> for an image tag, but pasting the code allows us to do more with CSS later. 
+                Vector images are best for graphics, because they are defined with math, and will display perfectly at any size, which saves time when they load on the page.</p>
+                <p>We are going to paste an SVG icon for Facebook into the footer below to practice this. Notice that I have added an <code>aria-label</code> 
+                attribute to the links wrapped around those icons. It is used when there isn't any link text, like when you wrap a link around the image.</p>
             </section>
 
             <section id="table">
                 <h2>Using Tables in HTML</h2>
-                <p>In HTML, tables are used for tabular data. Think of data similar to a schedule or what you might find easier to read in a spreadsheet format. Tables can cause issues on smaller screens, as they aren't responsive, so consider that if you add them to a page. If they will be small enough to fit on the screen, even with their data, you should be fine.</p>
+                <p>In HTML, tables are used for tabular data. Think of data similar to a schedule or what you might find easier to read in a spreadsheet format. 
+                Tables can cause issues on smaller screens, as they aren't responsive, so consider that if you add them to a page. If they will be small enough 
+                to fit on the screen, even with their data, you should be fine.</p>
                 <table>
                     <!-- TO DO: Complete the code below to create a caption for this table -->
                     Hours of Operation
@@ -174,7 +202,9 @@
 
         </main>
         <footer>
-            <p>For the icons below, we're using svg files. Find the Facebook icon on the <a href="https://tablericons.com/" target="_blank">Tabler Icons</a> website. Searching for "Facebook" and clicking on the correct icon when shown will copy it to your clipboard so that you can paste it into your HTML file inside of the correct link in the footer.</p>
+            <p>For the icons below, we're using svg files. Find the Facebook icon on the <a href="https://tablericons.com/" target="_blank">Tabler Icons</a> website. 
+            Searching for "Facebook" and clicking on the correct icon when shown will copy it to your clipboard so that you can paste it into your HTML file inside of 
+            the correct link in the footer.</p>
             <section>
                 <h2>Follow&nbsp;Us&nbsp;on Social&nbsp;Media</h2>
 
